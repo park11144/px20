@@ -1,0 +1,75 @@
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/checkinchill-25-08-2016-2.png');
+    background-size: cover;
+    overflow: hidden;
+    
+    background-color: antiquewhite;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: black;
+    color: #fff;
+}
+.navbar h1 {
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    transform: translateX(-70%);
+}
+.navbar ul {
+    display: flex;
+}
+.navbar ul li {
+    display: flex;
+    margin: 20px 30px;
+}
+.navbar ul li a {
+    position: relative;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.25s ease;
+}
+.navbar ul li a:hover::after {
+    width: 120%;
+}
+.sub {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: #fff;
+    width: 60%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+}
+.title {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    text-align: center;
+    color:transparent;
+    -webkit-text-stroke: 1px #000;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
